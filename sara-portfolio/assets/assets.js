@@ -1,3 +1,8 @@
+// ============================================================
+// Sara Ataíde Santos — Portfolio Data
+// Replace placeholder paths with your actual asset paths
+// ============================================================
+
 import user_image from './user-image.png';
 import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
@@ -76,42 +81,86 @@ export const assets = {
     right_arrow_bold_dark
 };
 
+// ── Work / Projects ──────────────────────────────────────────
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'Defect Volume Dashboard',
+        description: 'Power BI · Volkswagen Autoeuropa',
         bgImage: '/work-1.png',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'Price Monitor Web App',
+        description: 'MERN Stack · Caixa Mágica',
         bgImage: '/work-2.png',
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'Valtech Project #1',
+        description: 'React · Next.js · Node.js',
         bgImage: '/work-3.png',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'Valtech Project #2',
+        description: 'JavaScript · Express.js',
         bgImage: '/work-4.png',
     },
-]
-
-export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
-]
-
-export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
 ];
 
+// ── Services / Areas ─────────────────────────────────────────
+export const serviceData = [
+    {
+        icon: assets.web_icon,
+        title: 'Web Development',
+        description: 'Full-stack web apps using React, Next.js, Node.js and Express — from concept to deployment.',
+        link: '',
+    },
+    {
+        icon: assets.mobile_icon,
+        title: 'Data & BI',
+        description: 'Business Intelligence dashboards and data pipelines using Power BI, SQL, and Python.',
+        link: '',
+    },
+    {
+        icon: assets.ui_icon,
+        title: 'Machine Learning',
+        description: 'Text Mining, NLP, and ML models — currently deepening expertise at ISCTE.',
+        link: '',
+    },
+    {
+        icon: assets.graphics_icon,
+        title: 'Databases',
+        description: 'Database design and management with SQL Server, MySQL and MongoDB.',
+        link: '',
+    },
+];
+
+// ── About / Info Cards ───────────────────────────────────────
+export const infoList = [
+    {
+        icon: assets.code_icon,
+        iconDark: assets.code_icon_dark,
+        title: 'Languages & Frameworks',
+        description: 'Python · JavaScript · React · Next.js · Node.js · C# · SQL · HTML & CSS',
+    },
+    {
+        icon: assets.edu_icon,
+        iconDark: assets.edu_icon_dark,
+        title: 'Education',
+        description: 'MSc Computer Engineering — ISCTE (2024–present)\nBSc Information Systems Management — IPS (2021–2024)',
+    },
+    {
+        icon: assets.project_icon,
+        iconDark: assets.project_icon_dark,
+        title: 'Experience',
+        description: '3 internships · 4+ real-world projects · Young Talent @ Valtech',
+    },
+];
+
+// ── Tools ────────────────────────────────────────────────────
+// Add / swap icons to match Sara's actual toolset
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode,   // VS Code
+    assets.mongodb,  // MongoDB
+    assets.git,      // Git
+    assets.figma,    // Figma / Power BI (swap if you have a PBI icon)
+    assets.firebase, // SAP / Node (swap as needed)
 ];
