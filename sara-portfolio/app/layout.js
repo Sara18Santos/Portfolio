@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${outfit.className} ${ovo.className} h-full antialiased`}
     >
-      {children}
+      <body className="h-full">{children}</body>
     </html>
   );
 }
