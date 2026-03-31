@@ -1,7 +1,7 @@
 // Hero.tsx
 // Main hero section for homepage
-
 import Image from "next/image";
+
 
 export default function Hero() {
   return (
@@ -9,9 +9,9 @@ export default function Hero() {
       <Image
         src="/images/sara.jpg"
         alt="Sara Ataíde Santos"
-        width={170}
-        height={170}
-        className="border-4 border-green-100 shadow-md mb-2 object-cover"
+        width={154}
+        height={154}
+        className="border-2 border-green-200 shadow-md mb-2 object-cover"
         priority
       />
       <span className="px-4 py-1 rounded-full bg-green-100 text-green-900 font-semibold text-sm tracking-wide mb-2">
@@ -28,7 +28,7 @@ export default function Hero() {
       </p>
       <div className="flex gap-6 mt-4 justify-center">
         <a
-          href="/cv.pdf"
+          href="/docs/SaraSantos_CV_english.pdf"
           download
           className="text-base font-semibold underline underline-offset-4 hover:text-green-800 dark:hover:text-green-400 transition-colors"
         >

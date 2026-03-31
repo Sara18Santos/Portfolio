@@ -1,4 +1,6 @@
 import Experience from '@/components/experience'
+import Education from '@/components/education'
+import Skills from '@/components/skills'
 
 const cards = [
   {
@@ -39,6 +41,8 @@ export default function About() {
     </section>
 
     <Experience />
+    <Education />
+    <Skills />
     </>
   )
 }

@@ -36,7 +36,7 @@ export default function Experience() {
       <div>
         {experience.map((exp) => (
           <div key={exp.title} className="flex gap-8">
-            <div className="w-40 min-w-32 text-gray-700">{exp.period}</div>
+            <div className="w-40 min-w-32 text-gray-400">{exp.period}</div>
             <div className="flex-1 border-1-2 border-green-900 pl-6">
               <div className="font-bold text-lg text-black dark:text-white">
                 {exp.title}
