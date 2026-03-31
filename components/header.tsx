@@ -7,7 +7,7 @@ export default function Header() {
       <nav className="container mx-auto flex max-w-3xl items-center justify-center">
         <div className="flex w-full items-center justify-between">
           <Link href="/" className="font-serif text-2xl font-bold">
-            SS
+            Sara Santos
           </Link>
           <ul className="flex items-center gap-6 text-sm font-light text-muted-foreground sm:gap-10">
             <li className="transition-colors hover:text-foreground">
