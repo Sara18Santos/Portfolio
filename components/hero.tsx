@@ -26,14 +26,14 @@ export default function Hero() {
       <p className="text-base text-gray-700 dark:text-gray-300 max-w-lg mx-auto">
         Passionate about web development, data science, and building real-world products.
       </p>
-      <div className="flex gap-6 mt-4 justify-center">
-        <a
+      <div className="flex gap-6 justify-center">
+       {/*  <a
           href="/docs/SaraSantos_CV_english.pdf"
           download
           className="text-base font-semibold underline underline-offset-4 hover:text-green-800 dark:hover:text-green-400 transition-colors"
         >
           Download CV
-        </a>
+        </a> */}
       </div>
     </section>
   );
