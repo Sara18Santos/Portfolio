@@ -58,6 +58,7 @@ export const ContactForm = () => {
     }
 
     setSubmitStatus("sending");
+    
 
     try {
       const response = await fetch("/api/contact", {
@@ -69,6 +70,14 @@ export const ContactForm = () => {
       const data = await response.json();
 
       if (!response.ok) {
+        if (response.status === 503) {
+          setErrorMessage(
+            "Email service is not configured yet. Add RESEND_API_KEY in environment variables."
+          );
+          setSubmitStatus("error");
+          return;
+        }
+
         setErrorMessage(data.error ?? "Something went wrong. Please try again.");
         setSubmitStatus("error");
         return;
