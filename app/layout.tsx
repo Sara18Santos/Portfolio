@@ -16,7 +16,12 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: 'Portfolio - Sara Santos',
-  description: 'A portfolio website showcasing the projects and skills of Sara Santos, a passionate software developer. Explore my work, experience, and contact information to learn more about my journey in the world of technology.'
+  description: 'A portfolio website showcasing the projects and skills of Sara Santos, a passionate software developer. Explore my work, experience, and contact information to learn more about my journey in the world of technology.',
+  icons: {
+    icon: '/images/sara.jpg',
+    shortcut: '/images/sara.jpg',
+    apple: '/images/sara.jpg'
+  }
 }
 
 export default function RootLayout({
