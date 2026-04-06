@@ -23,18 +23,18 @@ const cards = [
 export default function About() {
   return (
     <>
-      <section className="pb-24 pt-40 max-w-3xl mx-auto" id="about">
-        <h1 className="text-primary font-semibold uppercase tracking-widest mb-2">About</h1>
-        <h2 className="text-3xl font-bold mb-8 text-gray-900 dark:text-white">A snapshot of my profile</h2>
-        <div className="grid gap-6 md:grid-cols-3">
+      <section className="pb-16 md:pb-24 pt-24 sm:pt-28 md:pt-40 max-w-3xl mx-auto px-4 sm:px-6" id="about">
+        <h1 className="text-xs md:text-sm text-primary font-semibold uppercase tracking-widest mb-2">About</h1>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-gray-900 dark:text-white">A snapshot of my profile</h2>
+        <div className="grid gap-4 md:gap-6 md:grid-cols-3">
           {cards.map((c) => (
           <div
             key={c.title}
-            className="bg-white dark:bg-zinc-900 rounded-xl shadow-md p-6 flex flex-col items-center text-center border border-zinc-200 dark:border-zinc-800 hover:shadow-lg transition-all duration-200 hover:-translate-y-2"
+            className="bg-white dark:bg-zinc-900 rounded-xl shadow-md p-4 sm:p-6 flex flex-col items-center text-center border border-zinc-200 dark:border-zinc-800 hover:shadow-lg transition-all duration-200 hover:-translate-y-2"
           >
-            <div className="text-4xl mb-3">{c.icon}</div>
-            <p className="font-semibold text-lg mb-1 text-zinc-900 dark:text-zinc-100">{c.title}</p>
-            <p className="text-zinc-600 dark:text-zinc-400 whitespace-pre-line text-sm">{c.desc}</p>
+            <div className="text-3xl sm:text-4xl mb-2 sm:mb-3">{c.icon}</div>
+            <p className="font-semibold text-base sm:text-lg mb-1 text-zinc-900 dark:text-zinc-100">{c.title}</p>
+            <p className="text-zinc-600 dark:text-zinc-400 whitespace-pre-line text-xs sm:text-sm">{c.desc}</p>
           </div>
         ))}
       </div>

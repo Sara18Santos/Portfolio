@@ -30,25 +30,25 @@ const navigation = [
 
 export default function Footer() {
   return (
-    <footer className="py-8">
-      <div className="container mx-auto max-w-3xl flex flex-col items-center justify-center gap-4">
-        <div className="flex justify-center space-x-6">
+    <footer className="py-6 md:py-8">
+      <div className="container mx-auto max-w-3xl flex flex-col items-center justify-center gap-3 md:gap-4 px-4 sm:px-6">
+        <div className="flex justify-center space-x-4 md:space-x-6">
           {navigation.map((item) => (
             <a
               key={item.name}
               href={item.href}
               target="_blank"
               rel="noreferrer noopener"
-              className="text-muted-foreground hover:text-foreground"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+              aria-label={item.name}
             >
               <span className="sr-only">{item.name}</span>
-              <item.icon className="h-6 w-6" aria-hidden="true" />
+              <item.icon className="h-5 w-5 md:h-6 md:w-6" aria-hidden="true" />
             </a>
           ))}
         </div>
-        <p className="text-center text-xs leading-5 text-muted-foreground">
-          &copy; {new Date().getFullYear()} Sara Santos. All rights reserved.
-        </p>
+        <p className="text-center text-[11px] md:text-xs leading-4 md:leading-5 text-muted-foreground px-2">
+          &copy; {new Date().getFullYear()} Sara Santos. All rights reserved.</p>
       </div>
     </footer>
   );

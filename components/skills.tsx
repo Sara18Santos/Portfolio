@@ -2,15 +2,15 @@
 // Skills section for homepage
 export default function Skills() {
 	return (
-		<section className="max-w-3xl mx-auto py-16" id="skills">
-			<h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-2 uppercase">Skills</h2>
-			<h3 className="text-3xl font-black mb-8 text-black dark:text-white">What I work with</h3>
+		<section className="max-w-3xl mx-auto py-12 md:py-16 px-4 sm:px-6" id="skills">
+			<h2 className="text-xs md:text-sm font-semibold tracking-widest text-gray-500 mb-2 uppercase">Skills</h2>
+			<h3 className="text-2xl sm:text-3xl md:text-4xl font-black mb-6 md:mb-8 text-black dark:text-white">What I work with</h3>
 
-			<div className="flex flex-col md:flex-row gap-12">
+			<div className="flex flex-col md:flex-row gap-8 md:gap-12">
 				{/* Technical Skills */}
 				<div className="flex-1">
-					<h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2 uppercase tracking-wide">Technical</h4>
-					<ul className="flex flex-wrap gap-x-6 gap-y-2 text-base text-black dark:text-white">
+					<h4 className="text-xs md:text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3 md:mb-4 uppercase tracking-wide">Technical</h4>
+					<ul className="flex flex-wrap gap-x-4 sm:gap-x-6 gap-y-2 text-sm sm:text-base text-black dark:text-white">
 						<li>Python</li>
 						<li>JavaScript</li>
 						<li>React</li>
@@ -27,8 +27,8 @@ export default function Skills() {
 
 				{/* Methodologies & Soft Skills */}
 				<div className="flex-1">
-					<h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2 uppercase tracking-wide">Methodologies & Soft Skills</h4>
-					<ul className="flex flex-wrap gap-x-6 gap-y-2 text-base text-black dark:text-white">
+					<h4 className="text-xs md:text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3 md:mb-4 uppercase tracking-wide">Methodologies & Soft Skills</h4>
+					<ul className="flex flex-wrap gap-x-4 sm:gap-x-6 gap-y-2 text-sm sm:text-base text-black dark:text-white">
 						<li>Scrum / Agile</li>
 						<li>SDLC</li>
 						<li>BPMN</li>

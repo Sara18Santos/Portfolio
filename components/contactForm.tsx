@@ -104,17 +104,17 @@ export const ContactForm = () => {
 
   if (submitStatus === "success") {
     return (
-      <div className="rounded-xl border-2 border-green-300 bg-green-50 p-8 text-center dark:border-green-800 dark:bg-green-950/30">
-        <p className="text-lg font-semibold text-green-800 dark:text-green-300">
+      <div className="rounded-xl border-2 border-green-300 bg-green-50 p-6 sm:p-8 text-center dark:border-green-800 dark:bg-green-950/30">
+        <p className="text-base sm:text-lg font-semibold text-green-800 dark:text-green-300">
           Message sent!
         </p>
-        <p className="mt-1 text-sm text-green-700 dark:text-green-400">
+        <p className="mt-1 text-xs sm:text-sm text-green-700 dark:text-green-400">
           Thanks for reaching out. I&apos;ll get back to you soon.
         </p>
         <button
           type="button"
           onClick={() => setSubmitStatus("idle")}
-          className="mt-4 text-sm underline underline-offset-4 text-green-800 dark:text-green-400 hover:opacity-75"
+          className="mt-4 text-xs sm:text-sm underline underline-offset-4 text-green-800 dark:text-green-400 hover:opacity-75"
         >
           Send another message
         </button>
@@ -124,13 +124,13 @@ export const ContactForm = () => {
 
   return (
     <form
-      className="mx-auto rounded-xl border-2 border-gray-300 bg-white p-8 shadow-md dark:border-gray-700 dark:bg-zinc-900"
+      className="mx-auto rounded-xl border-2 border-gray-300 bg-white p-6 sm:p-8 shadow-md dark:border-gray-700 dark:bg-zinc-900"
       onSubmit={handleSubmit}
       noValidate
     >
       <div>
         <label
-          className="block text-sm font-bold text-gray-700 dark:text-gray-300"
+          className="block text-xs sm:text-sm font-bold text-gray-700 dark:text-gray-300"
           htmlFor="name"
         >
           Name
@@ -147,15 +147,15 @@ export const ContactForm = () => {
           aria-describedby={errors.name ? "name-error" : undefined}
         />
         {errors.name ? (
-          <p id="name-error" className="mt-2 text-sm text-red-600 dark:text-red-400">
+          <p id="name-error" className="mt-2 text-xs sm:text-sm text-red-600 dark:text-red-400">
             {errors.name}
           </p>
         ) : null}
       </div>
 
-      <div className="mt-4">
+      <div className="mt-3 sm:mt-4">
         <label
-          className="block text-sm font-bold text-gray-700 dark:text-gray-300"
+          className="block text-xs sm:text-sm font-bold text-gray-700 dark:text-gray-300"
           htmlFor="email"
         >
           Email
@@ -172,15 +172,15 @@ export const ContactForm = () => {
           aria-describedby={errors.email ? "email-error" : undefined}
         />
         {errors.email ? (
-          <p id="email-error" className="mt-2 text-sm text-red-600 dark:text-red-400">
+          <p id="email-error" className="mt-2 text-xs sm:text-sm text-red-600 dark:text-red-400">
             {errors.email}
           </p>
         ) : null}
       </div>
 
-      <div className="mt-4">
+      <div className="mt-3 sm:mt-4">
         <label
-          className="block text-sm font-bold text-gray-700 dark:text-gray-300"
+          className="block text-xs sm:text-sm font-bold text-gray-700 dark:text-gray-300"
           htmlFor="message"
         >
           Message
@@ -188,7 +188,7 @@ export const ContactForm = () => {
         <textarea
           className={inputClassName}
           id="message"
-          rows={5}
+          rows={4}
           placeholder="Your message"
           value={formData.message}
           disabled={isSending}
@@ -197,18 +197,18 @@ export const ContactForm = () => {
           aria-describedby={errors.message ? "message-error" : undefined}
         />
         {errors.message ? (
-          <p id="message-error" className="mt-2 text-sm text-red-600 dark:text-red-400">
+          <p id="message-error" className="mt-2 text-xs sm:text-sm text-red-600 dark:text-red-400">
             {errors.message}
           </p>
         ) : null}
       </div>
 
-      <div className="mt-6 flex items-center justify-between gap-4">
-        <Button type="submit" className="px-5" disabled={isSending}>
+      <div className="mt-5 sm:mt-6 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-4">
+        <Button type="submit" className="px-5 text-sm sm:text-base" disabled={isSending}>
           {isSending ? "Sending…" : "Send message"}
         </Button>
         {submitStatus === "error" ? (
-          <p className="text-sm text-red-600 dark:text-red-400" aria-live="assertive">
+          <p className="text-xs sm:text-sm text-red-600 dark:text-red-400" aria-live="assertive">
             {errorMessage}
           </p>
         ) : null}
